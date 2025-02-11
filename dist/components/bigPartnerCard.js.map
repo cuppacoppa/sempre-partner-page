@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["../../src/components/bigPartnerCard.ts"],
+  "sourcesContent": ["// src/components/PartnerCard.ts\r\n\r\nexport function bigPartnerCard(partner: { name: string; description: string; logoUrl: string }): string {\r\n    return `\r\n      <div class=\"partner-card\">\r\n        <img src=\"${partner.logoUrl}\" alt=\"${partner.name} logo\" class=\"partner-card__logo\" />\r\n        <h2 class=\"partner-card__name\">${partner.name}</h2>\r\n        <p class=\"partner-card__description\">${partner.description}</p>\r\n      </div>\r\n    `;\r\n  }\r\n  "],
+  "mappings": ";;;AAEO,WAAS,eAAe,SAAyE;AACpG,WAAO;AAAA;AAAA,oBAES,QAAQ,iBAAiB,QAAQ;AAAA,yCACZ,QAAQ;AAAA,+CACF,QAAQ;AAAA;AAAA;AAAA,EAGrD;",
+  "names": []
+}

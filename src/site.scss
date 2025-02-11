@@ -1,0 +1,594 @@
+/* General Logo Card */
+.logo-card {
+  position: relative;
+  width: 100%;
+  max-width: 250px; 
+  margin: 15px;
+  border-radius: 8px;
+  overflow: hidden;
+
+  &__content {
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background-color: #fff;
+  }
+
+  /* Main Partner Cards */
+  &__content img {
+    width: 100px;  
+    height: 75px;  
+    object-fit: contain;  /* Maintains the aspect ratio and fits the image within the box */
+    margin-bottom: 10px;
+  }
+}
+
+.main-partner-section {
+  padding-top: 48px;
+}
+
+.main-partner__icon {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  width: 24px;
+  height: 24px;
+  background-color: lightgrey;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 0.2s ease-in-out;
+}
+
+.main-partner__icon svg {
+  width: 12px;
+  height: 12px;
+  fill: white;
+}
+
+.logo-card:hover .main-partner__icon {
+  background-color: darkgrey;
+}
+
+.application-partner-section {
+  padding-top: 48px;
+}
+
+/* Application Partner Card Styles */
+.application-partner .logo-card__content img {
+  width: 150px;  
+  height: 150px;  
+}
+
+/* Flexbox container for partner cards */
+.partner-card-list,
+.application-partner-card-list {
+  display: flex;
+  flex-wrap: wrap; /* Ensures wrapping if there are too many cards */
+  justify-content: center; 
+  gap: 20px; 
+  max-width: 115rem; 
+  margin: 0 auto; 
+  width: 95%;
+}
+
+/* Main Partner Card Styles */
+.main-partner {
+  border: 1px solid #ddd; 
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer; /* Indicates that the card is clickable */
+
+  &__link {
+    position: absolute; 
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: block;
+    z-index: 2; /* Ensures the link is clickable */
+  }
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background-color: #fff; /* White background */
+    padding: 15px;
+
+    /* Highlight the link area when hovered */
+    &:hover {
+      background-color: #f9f9f9; /* Slightly darker background on hover */
+    }
+  }
+
+  &__content h3 {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #333;
+    margin: 0;
+    text-transform: capitalize;
+  }
+
+  &:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  }
+}
+
+/* Application Partner Card Styles (No hover, no border) */
+.application-partner {
+  /* No border, no hover effects for application partners */
+  border: none;
+
+  &:hover {
+    transform: none;
+    box-shadow: none; 
+  }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .partner-card-list,
+  .application-partner-card-list {
+    justify-content: center;
+  }
+  
+  .logo-card {
+    flex: 1 1 100%; /* Makes them full width on smaller screens */
+    max-width: none;
+  }
+}
+
+.hero-partner-section {
+  padding-top: 48px;
+}
+
+.hero__content {
+  max-width: 115rem;
+  margin: 0 auto;
+  // padding: 3rem 2rem;
+  text-align: left;
+
+  h1 {
+      font-size: 2.5rem;
+      font-weight: bold;
+      color: #000;
+      margin-bottom: 1rem;
+  }
+}
+
+.hero__row {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1.5rem;
+}
+
+.hero__row p {
+  flex: 1;
+  font-size: 1.125rem;
+  line-height: 1.6;
+  color: #000; 
+  max-width: 60rem;
+}
+
+.hero__button {
+  background-color: var(--blue, #42fff4); 
+  -webkit-backdrop-filter: blur(20px);
+  backdrop-filter: blur(20px);
+  color: var(--black, #070707); 
+  border-radius: 7.6rem;
+  flex: none;
+  padding: 1.2rem 2.6rem;
+  font-size: 1.6rem;
+  font-weight: normal;
+  text-decoration: none;
+  transition: color 0.2s, background-color 0.2s, transform 0.2s ease;
+  display: inline-block;
+  cursor: pointer;
+  border: 0;
+
+  &:hover {
+      color: var(--black, #070707);
+      background-color: #42d9d0; 
+      outline: 0;
+      transform: translateY(-2px); /* Subtle lift effect */
+  }
+
+  &:active {
+      outline: 0;
+  }
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .hero__row {
+      flex-direction: column;
+      align-items: flex-start;
+  }
+
+  .hero__button {
+      width: 100%;
+      text-align: center;
+  }
+}
+
+.filter-container {
+  position: relative;
+  display: inline-block;
+}
+
+.filter-button {
+  background-color: white;
+  color: black;
+  border: 1px solid black; /* Keeps the outline */
+  border-radius: 7.6rem; /* Fully rounded */
+  padding: 10px 20px;
+  font-size: 1.6rem;
+  font-weight: normal;
+  text-decoration: none;
+  transition: color 0.2s, background-color 0.2s, transform 0.2s ease;
+  display: inline-block;
+  cursor: pointer;
+  outline: 1px solid black; /* Ensures visible outline */
+  
+  &:hover {
+    background-color: #f0f0f0; /* Light grey hover effect */
+    transform: translateY(-2px); /* Subtle lift effect */
+  }
+
+  &:active {
+    outline: 1px solid black; /* Ensures outline remains */
+  }
+}
+
+
+
+.filter-dropdown {
+  display: none;
+  position: absolute;
+  top: calc(100% + 10px); /* 10px gap between button and dropdown */
+  left: 0;
+  background: white;
+  border: 1px solid black;
+  padding: 15px; 
+  border-radius: 5px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  width: 250px; /* Set a minimum width for the dropdown */
+  z-index: 5;
+
+  &.open {
+    display: block;
+  }
+
+  label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+    padding-right: 10px; 
+  }
+
+  select {
+    width: 100%;
+    padding: 8px; 
+    box-sizing: border-box; /* Ensure padding doesn't affect the width */
+    font-size: 1rem; 
+  }
+}
+
+
+/* Container for search bar next to the filter button */
+.search-container {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end; 
+  margin-left: 20px; 
+}
+
+/* Search input */
+.search-input {
+  padding: 0.8rem 1.2rem;
+  font-size: 1rem;
+  border: 2px solid #333;  
+  border-radius: 5px;
+  width: 250px; 
+  outline: none;
+  transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+/* Focus state for search input */
+.search-input:focus {
+  border-color: #42d9d0;  /* Highlight border color */
+  box-shadow: 0 0 5px rgba(66, 217, 208, 0.6);  /* Optional: add a glow effect */
+}
+
+/* Placeholder styling */
+.search-input::placeholder {
+  color: var(--cloud-60);
+  font-style: italic;
+}
+
+/* Search input on hover */
+.search-input:hover {
+  border-color: var(--cloud-60);
+}
+
+/* Parent container - Align filter and search in a row */
+.partner-filter-section {
+  display: flex; 
+  justify-content: flex-end; 
+  align-items: center; 
+  gap: 20px; /* Optional: add space between filter and search */
+}
+.partner-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 100vh;
+  padding: 5vh 10vw;
+  box-sizing: border-box;
+
+  .partner-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2rem;
+
+    .partner-text {
+      flex: 1;
+
+      .partner-subheading {
+        font-size: 1.2rem;
+        font-weight: 500;
+        color: #666;
+        margin-bottom: 0.5rem;
+      }
+
+      h1 {
+        font-size: 3rem;
+        font-weight: 700;
+        color: #222;
+        line-height: 1.2;
+      }
+    }
+
+    .partner-logo {
+      flex: 0.5;
+      max-width: 200px; // Adjust based on preference
+
+      img {
+        width: 100%;
+        height: auto;
+      }
+    }
+  }
+
+  .partner-main-content {
+    margin-top: 3rem;
+
+    .partner-description {
+      font-size: 1.2rem;
+      line-height: 1.6;
+      color: #444;
+    }
+  }
+}
+
+// Full-Screen Media Section
+.partner-fullscreen-media {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain; // Ensures the whole image is visible
+  }
+}
+
+// Mobile Responsiveness (<= 768px)
+@media (max-width: 768px) {
+  .partner-container {
+    padding: 5vh 5vw; // Less padding for mobile
+  }
+
+  .partner-header {
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 1.5rem;
+
+    .partner-text {
+      .partner-subheading {
+        font-size: 1rem;
+      }
+
+      h1 {
+        font-size: 2.5rem;
+      }
+    }
+
+    .partner-logo {
+      max-width: 150px;
+    }
+  }
+
+  .partner-main-content {
+    margin-top: 2rem;
+
+    .partner-description {
+      font-size: 1rem;
+    }
+  }
+
+  .partner-fullscreen-media {
+    height: 60vh; // Less height for mobile and tablets
+  }
+}
+
+// Mobile Adjustments (<= 480px)
+@media (max-width: 480px) {
+  .partner-container {
+    padding: 5vh 3vw; // Further reduce padding for small screens
+  }
+
+  .partner-header {
+    .partner-text {
+      .partner-subheading {
+        font-size: 0.9rem;
+      }
+
+      h1 {
+        font-size: 2rem;
+      }
+    }
+
+    .partner-logo {
+      max-width: 120px; // Smaller logo on very small screens
+    }
+  }
+
+  .partner-main-content {
+    margin-top: 1.5rem;
+
+    .partner-description {
+      font-size: 0.9rem;
+    }
+  }
+
+  .partner-fullscreen-media {
+    height: 50vh; // Further adjust height for small screens
+  }
+}
+
+.partner-case-study {
+  padding: 5vh 10vw;
+  box-sizing: border-box;
+
+  .case-study-tabs {
+    display: flex;
+    justify-content: space-between; /* Spread out the tabs horizontally */
+    gap: 2rem;
+    margin-bottom: 2rem;
+    width: 100%; 
+    
+    .tab-button {
+      padding: 0.8rem 1.2rem;
+      font-size: 1.1rem;
+      font-weight: 500;
+      color: #555;
+      background-color: transparent;
+      border: none; 
+      cursor: pointer;
+      position: relative; /* To position the underline */
+      transition: color 0.3s;
+  
+      &:hover {
+        color: #222; 
+      }
+  
+      &.active {
+        color: #222; /* Active tab text color */
+        &::after {
+          content: '';
+          position: absolute;
+          bottom: 0;
+          left: 0;
+          width: 100%;
+          height: 2px; /* Underline height */
+          background-color: #222; /* Active tab underline color */
+        }
+      }
+    }
+  }
+  
+  /* Hidden state for fade out */
+.case-study-content.hidden {
+  opacity: 0;
+}
+
+  .case-study-content {
+    display: flex;
+    gap: 3rem;
+    opacity: 1;
+    transition: opacity 0.3s ease-in-out; 
+
+    .case-study-left {
+      flex: 1;
+      .case-study-media {
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+      }
+    }
+
+    .case-study-right {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      gap: 2rem;
+
+      .case-study-subheading {
+        font-size: 1.5rem;
+        font-weight: 600;
+        color: #333;
+        margin-bottom: 1rem;
+      }
+
+      .case-study-section {
+        .case-study-title {
+          font-size: 1.3rem;
+          font-weight: 700;
+          color: #222;
+        }
+
+        .case-study-text {
+          font-size: 1.1rem;
+          line-height: 1.6;
+          color: #444;
+        }
+      }
+    }
+  }
+}
+
+// Mobile Responsiveness (<= 768px)
+@media (max-width: 768px) {
+  .partner-case-study {
+    padding: 5vh 5vw;
+
+    .case-study-content {
+      flex-direction: column;
+      opacity: 1;
+      transition: opacity 0.3s ease-in-out; 
+
+      .case-study-left, .case-study-right {
+        flex: none;
+        width: 100%;
+      }
+
+      .case-study-right {
+        margin-top: 2rem;
+      }
+    }
+  }
+}
+
+.app-container{
+  max-width: 71.875rem; 
+  margin: 0 auto; 
+  width: 95%;
+}
+
+body {
+  font-family: "PP Mori", sans-serif; 
+}

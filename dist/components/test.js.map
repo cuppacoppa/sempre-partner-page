@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["../../src/components/test.ts"],
+  "sourcesContent": ["\r\n/*\r\n * Component | Test \r\n */\r\n\r\nimport { IModule } from \"@sygnal/sse\";\r\n\r\n\r\nexport class TestComponent implements IModule {\r\n\r\n  elem: HTMLElement;\r\n\r\n  constructor(elem: HTMLElement) {\r\n    this.elem = elem; \r\n\r\n  }\r\n\r\n  setup() {\r\n        \r\n  }\r\n\r\n  exec() {\r\n\r\n    // Initialize sa5 window var\r\n    const sa5: any = window['sa5' as any];\r\n\r\n  }\r\n\r\n}\r\n"],
+  "mappings": ";;;AAQO,MAAM,gBAAN,MAAuC;AAAA,IAI5C,YAAY,MAAmB;AAC7B,WAAK,OAAO;AAAA,IAEd;AAAA,IAEA,QAAQ;AAAA,IAER;AAAA,IAEA,OAAO;AAGL,YAAM,MAAW,OAAO;AAAA,IAE1B;AAAA,EAEF;",
+  "names": []
+}
