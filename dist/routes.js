@@ -655,6 +655,10 @@
           tabButton.classList.add("active");
           updateTabContent2(index);
         });
+        if (index === 0) {
+          tabButton.classList.add("active");
+          updateTabContent2(index);
+        }
       });
       updateTabContent2(0);
     }

@@ -90,6 +90,12 @@ window.addEventListener('load', () => {
         
         updateTabContent(index);
       });
+
+      if (index === 0) {
+        tabButton.classList.add('active');
+        updateTabContent(index);
+      }
+      
     });
 
     function updateTabContent(tabIndex: number) {
@@ -149,6 +155,7 @@ window.addEventListener('load', () => {
         caseStudyContentContainer!.classList.remove('hidden');
       }, 300); // Match the duration of the fade-out transition
     }
+    
     
     updateTabContent(0); // Set default content for the first tab
   }
