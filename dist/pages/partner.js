@@ -73,15 +73,12 @@
 
   // src/pages/partner.ts
   var partnersApp = [
-    { logoUrl: "https://cdn.prod.website-files.com/679e860587d809fd4d2d7b55/67aa34cea35c6f2a2eda70bb_Oracle_Logo.svg.png", tags: ["Cloud"] },
-    { logoUrl: "https://cdn.prod.website-files.com/660bffb9ffdd26c353bd02d3/67ab88da5ae37db0d0e5b30b_SparkCognition_Logo.jpg", tags: ["Force Protection"] },
-    { logoUrl: "https://cdn.prod.website-files.com/660bffb9ffdd26c353bd02d3/67ab88d95d4e17f85b833e51_instant%20connect%201.png", tags: ["Bridging"] },
-    { logoUrl: "https://cdn.prod.website-files.com/660bffb9ffdd26c353bd02d3/672e773f1a215de4e3b140a8_Corero_Network_Security_Logo.jpg", tags: ["Security"] },
-    { logoUrl: "https://cdn.prod.website-files.com/660bffb9ffdd26c353bd02d3/67ab88d99407a3a9399e97ce_BoonLogic_Main-Logo.png", tags: ["Artificial Intelligence"] },
-    { logoUrl: "https://cdn.prod.website-files.com/660bffb9ffdd26c353bd02d3/67ab88d87da80c137d3dbd0f_Tiami_logo-4-1-1.png", tags: ["C-UAS"] },
-    { logoUrl: "https://cdn.prod.website-files.com/660bffb9ffdd26c353bd02d3/67ab88d8f852614075082571_R2_footer-logo-1024x848.png", tags: ["C-UAS"] },
-    { logoUrl: "https://cdn.prod.website-files.com/660bffb9ffdd26c353bd02d3/67ab88d8e7151d4b8cd03b29_element.png", tags: ["Productivity"] },
-    { logoUrl: "https://cdn.prod.website-files.com/660bffb9ffdd26c353bd02d3/67ab88d87da80c137d3dbd1c_Amazon_Web_Services_Logo.svg.png", tags: ["Cloud"] }
+    { logoUrl: "https://cdn.prod.website-files.com/660bffb9ffdd26c353bd02d3/67c9ce87c0161b80af81d17e_logos-partners-05-avathon.png", tags: ["Force Protection"] },
+    { logoUrl: "https://cdn.prod.website-files.com/660bffb9ffdd26c353bd02d3/67ab88d95d4e17f85b833e51_393e48a33fb6baffff8f806792e4170a_instant%20connect%201.png", tags: ["Bridging"] },
+    { logoUrl: "https://cdn.prod.website-files.com/660bffb9ffdd26c353bd02d3/67ab88d87da80c137d3dbd0f_63442d7b9464cdf5cc89dca78c1a661c_Tiami_logo-4-1-1.png", tags: ["C-UAS"] },
+    { logoUrl: "https://cdn.prod.website-files.com/660bffb9ffdd26c353bd02d3/67ab88d8f852614075082571_ac43998f8b3bae23263204dd6e3fd06a_R2_footer-logo-1024x848.png", tags: ["C-UAS"] },
+    { logoUrl: "https://cdn.prod.website-files.com/660bffb9ffdd26c353bd02d3/67c9ceb9c0d357ff16f1a758_logos-partners-06-radisys.png", tags: ["ORAN"] },
+    { logoUrl: "https://cdn.prod.website-files.com/660bffb9ffdd26c353bd02d3/67c9ce60a578ebc36da2e29e_logos-partners-04-proxim.png", tags: ["Aircraft Inspection"] }
   ];
   var PartnerPage = class {
     constructor() {
