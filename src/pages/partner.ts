@@ -38,7 +38,7 @@ export class PartnerPage implements IModule {
                     case 'main-partner-card-list':
                         const mainPartnerSection = element;
                         const partnersMain = [
-                            { name: 'Boeing', logoUrl: 'https://cdn.prod.website-files.com/679e860587d809fd4d2d7b55/67aa3479c6a80a7987c26917_Boeing_full_logo.svg.png', link: 'https://mats-dapper-site-d83a81.webflow.io/partner/learn?partner=boeing' },
+                            { name: 'Boeing', logoUrl: 'https://cdn.prod.website-files.com/679e860587d809fd4d2d7b55/67aa3479c6a80a7987c26917_Boeing_full_logo.svg.png', description:'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.',link: 'https://mats-dapper-site-d83a81.webflow.io/partner/learn?partner=boeing' },
                             { name: 'T-Mobile', logoUrl: 'https://cdn.prod.website-files.com/660bffb9ffdd26c353bd02d3/672e663a927272a6b6d5fe31_T-Mobile_New_Logo_Primary_RGB_M-on-W.jpg' },
                             { name: 'Northrop', logoUrl: 'https://cdn.prod.website-files.com/660bffb9ffdd26c353bd02d3/67ab88d9ed107ef4cfc5ee00_Northrop_Grumman_logo_blue-on-clear_2020.svg.png' },
                         ];
