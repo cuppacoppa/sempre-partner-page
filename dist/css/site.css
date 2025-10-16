@@ -2,7 +2,7 @@
 .logo-card {
   position: relative;
   width: 100%;
-  max-width: 250px;
+  max-width: 450px;
   margin: 15px;
   border-radius: 8px;
   overflow: hidden;
@@ -21,6 +21,9 @@
   height: 75px;
   object-fit: contain; /* Maintains the aspect ratio and fits the image within the box */
   margin-bottom: 10px;
+}
+.logo-card .partner-summary {
+  margin-top: 20px;
 }
 
 .main-partner-section {
