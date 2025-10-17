@@ -82,18 +82,22 @@
 
 /* Main Partner Card Styles */
 .main-partner {
-  border: 1px solid #ddd; 
+  border: 1px solid #ddd;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
-  cursor: pointer; /* Indicates that the card is clickable */
+  cursor: pointer;
+  box-sizing: border-box; /* ensures border is included in width calculation */
+  background-clip: padding-box; /* prevents border bleed through background */
+  position: relative; /* ensures z-index context */
+  transform: translateZ(0); /* improves crispness on hi-dpi screens */
 
   &__link {
-    position: absolute; 
+    position: absolute;
     top: 0;
     left: 0;
     right: 0;
     bottom: 0;
     display: block;
-    z-index: 2; /* Ensures the link is clickable */
+    z-index: 2;
   }
 
   &__content {
@@ -101,12 +105,11 @@
     flex-direction: column;
     align-items: center;
     text-align: center;
-    background-color: #fff; /* White background */
+    background-color: #fff;
     padding: 15px;
 
-    /* Highlight the link area when hovered */
     &:hover {
-      background-color: #f9f9f9; /* Slightly darker background on hover */
+      background-color: #f9f9f9;
     }
   }
 
@@ -586,6 +589,16 @@
         margin-top: 2rem;
       }
     }
+  }
+}
+
+/* Fix inconsistent border rendering on small screens */
+@media (max-width: 480px) {
+  .main-partner {
+    min-width: 90%; /* avoids subpixel collapse */
+    margin: 10px auto; /* centers and keeps spacing consistent */
+    border-width: 1px; /* explicitly reapply to prevent Safari rounding loss */
+    box-sizing: border-box; /* ensures consistent border sizing */
   }
 }
 
