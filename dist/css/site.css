@@ -24,6 +24,7 @@
 }
 .logo-card .partner-summary {
   margin-top: 20px;
+  margin-bottom: 20px;
 }
 
 .main-partner-section {
@@ -298,9 +299,10 @@
 /* Parent container - Align filter and search in a row */
 .partner-filter-section {
   display: flex;
-  justify-content: flex-end;
+  justify-content: center;
   align-items: center;
   gap: 20px; /* Optional: add space between filter and search */
+  margin-top: 20px;
 }
 
 .partner-container {
