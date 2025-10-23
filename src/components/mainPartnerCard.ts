@@ -2,6 +2,7 @@ export const mainPartnerCard = (partner: {
   name: string, 
   logoUrl: string, 
   description?: string,
+  subheading?: string,
   link?: string 
 }) => {
   return `
@@ -10,7 +11,7 @@ export const mainPartnerCard = (partner: {
       
       <div class="logo-card__content">
         <img src="${partner.logoUrl}" alt="${partner.name}" loading="lazy">
-        <h3 id="logo-card-${partner.name}">${partner.name}</h3>
+        <h3 class="partner-subheader" id="logo-card-${partner.name}">${partner.subheading}</h3>
         
         ${partner.description ? `<p class="partner-summary">${partner.description}</p>` : ""}
 

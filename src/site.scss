@@ -18,15 +18,20 @@
 
   /* Main Partner Cards */
   &__content img {
-    width: 100px;  
-    height: 75px;  
+    width: 200px;  
+    height: 150px;  
     object-fit: contain;  /* Maintains the aspect ratio and fits the image within the box */
     margin-bottom: 10px;
   }
 
   .partner-summary {
-    margin-top: 20px;
+    // margin-top: 20px;
     margin-bottom: 20px;
+    text-align: left;
+  }
+
+  .partner-subheader {
+    text-align: left;
   }
 }
 
