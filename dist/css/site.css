@@ -20,7 +20,6 @@
   width: 200px;
   height: 150px;
   object-fit: contain; /* Maintains the aspect ratio and fits the image within the box */
-  margin-bottom: 10px;
 }
 .logo-card .partner-summary {
   margin-bottom: 20px;
@@ -28,6 +27,7 @@
 }
 .logo-card .partner-subheader {
   text-align: left;
+  margin-bottom: 16px;
 }
 
 .main-partner-section {
