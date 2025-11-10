@@ -33,7 +33,7 @@
   .partner-subheader {
     text-align: left;
     margin-bottom: 16px;
-    font-size: 18px !important;
+    font-size: 18px !important; // added to make main partner cards stay on 2 lines
   }
 }
 
@@ -606,6 +606,23 @@
     margin: 10px auto; /* centers and keeps spacing consistent */
     border-width: 1px; /* explicitly reapply to prevent Safari rounding loss */
     box-sizing: border-box; /* ensures consistent border sizing */
+  }
+
+  .hero__button {
+    font-size: 3.4rem;
+  }
+
+  .filter-button {
+    font-size: 3.4rem;
+    width: 400px;
+  }
+
+  .filter-dropdown label {
+    font-size: 3.4rem;  
+  }
+
+  .filter-dropdown select {
+    font-size: 3.4rem;  
   }
 }
 

@@ -527,6 +527,19 @@
     border-width: 1px; /* explicitly reapply to prevent Safari rounding loss */
     box-sizing: border-box; /* ensures consistent border sizing */
   }
+  .hero__button {
+    font-size: 3.4rem;
+  }
+  .filter-button {
+    font-size: 3.4rem;
+    width: 400px;
+  }
+  .filter-dropdown label {
+    font-size: 3.4rem;
+  }
+  .filter-dropdown select {
+    font-size: 3.4rem;
+  }
 }
 .app-container {
   max-width: 115rem;
