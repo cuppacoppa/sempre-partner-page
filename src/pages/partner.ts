@@ -2,6 +2,7 @@ import { IModule } from "@sygnal/sse";
 import { mainPartnerCard } from "../components/mainPartnerCard";
 import { applicationPartnerCard } from "../components/applicationPartnerCard";
 import { partnerFilter } from "../components/filterPartner";
+import { cloudPartnerCard } from "../components/cloudPartnerCard";
 // import { partnerSearch } from "../components/searchPartner";
 
 interface Partner {
@@ -24,6 +25,13 @@ export const partnersApp: Partner[] = [
     { logoUrl: 'https://cdn.prod.website-files.com/660bffb9ffdd26c353bd02d3/6902581d0ba8faf6c97774cd_placeholder.png', tags: ['AI'] },
     { logoUrl: 'https://cdn.prod.website-files.com/660bffb9ffdd26c353bd02d3/6902581d0ba8faf6c97774cd_placeholder.png', tags: ['C-(s)UAS'] },
     { logoUrl: 'https://cdn.prod.website-files.com/660bffb9ffdd26c353bd02d3/6902581f5e1fb4680e8b03cd_dedrone.png', tags: ['C-(s)UAS'] },
+    
+];
+
+export const partnersCloud: Partner[] = [
+    { logoUrl: 'https://cdn.prod.website-files.com/660bffb9ffdd26c353bd02d3/67c9ce87c0161b80af81d17e_logos-partners-05-avathon.png', tags: ['AI'] },
+    { logoUrl: 'https://cdn.prod.website-files.com/660bffb9ffdd26c353bd02d3/67ab88d95d4e17f85b833e51_393e48a33fb6baffff8f806792e4170a_instant%20connect%201.png', tags: ['Interoperability'] },
+    { logoUrl: 'https://cdn.prod.website-files.com/660bffb9ffdd26c353bd02d3/67ab88d87da80c137d3dbd0f_63442d7b9464cdf5cc89dca78c1a661c_Tiami_logo-4-1-1.png', tags: ['C-(s)UAS'] },
     
 ];
 
@@ -54,6 +62,10 @@ export class PartnerPage implements IModule {
                         partnersMain.forEach(partner => {
                             mainPartnerSection.innerHTML += mainPartnerCard(partner);
                         });
+                        break;
+
+                    case 'cloud-partner-card-list':
+                        renderCloudPartners(element);
                         break;
 
                     case 'application-partner-card-list':
@@ -104,5 +116,13 @@ const renderApplicationPartners = (container: HTMLElement) => {
     container.classList.add("application-partner-card-list");
     partnersApp.forEach(partner => {
         container.innerHTML += applicationPartnerCard(partner);
+    });
+};
+
+// Renders all application partners initially
+const renderCloudPartners = (container: HTMLElement) => {
+    container.classList.add("application-partner-card-list");
+    partnersCloud.forEach(partner => {
+        container.innerHTML += cloudPartnerCard(partner);
     });
 };
