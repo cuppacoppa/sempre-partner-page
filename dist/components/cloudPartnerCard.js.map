@@ -1,7 +1,7 @@
 {
   "version": 3,
   "sources": ["../../src/components/cloudPartnerCard.ts"],
-  "sourcesContent": ["export const cloudPartnerCard = (partner: { logoUrl: string }) => {\r\n  return `\r\n    <div class=\"logo-card application-partner\">\r\n      <div class=\"logo-card__content\">\r\n        <img src=\"${partner.logoUrl}\" alt=\"Cloud Integration Logo\" loading=\"lazy\">\r\n      </div>\r\n    </div>\r\n  `;\r\n};\r\n"],
+  "sourcesContent": ["export const cloudPartnerCard = (partner: { logoUrl: string }) => {\r\n  return `\r\n    <div class=\"logo-card cloud-partner\">\r\n      <div class=\"logo-card__content\">\r\n        <img src=\"${partner.logoUrl}\" alt=\"Cloud Integration Logo\" loading=\"lazy\">\r\n      </div>\r\n    </div>\r\n  `;\r\n};\r\n"],
   "mappings": ";;;AAAO,MAAM,mBAAmB,CAAC,YAAiC;AAChE,WAAO;AAAA;AAAA;AAAA,oBAGW,QAAQ;AAAA;AAAA;AAAA;AAAA,EAI5B;",
   "names": []
 }

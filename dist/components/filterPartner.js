@@ -19,8 +19,7 @@
     { logoUrl: "https://cdn.prod.website-files.com/660bffb9ffdd26c353bd02d3/67ab88d8f852614075082571_ac43998f8b3bae23263204dd6e3fd06a_R2_footer-logo-1024x848.png", tags: ["C-(s)UAS"] },
     { logoUrl: "https://cdn.prod.website-files.com/660bffb9ffdd26c353bd02d3/6902581fae03ef4d3d23824e_rallytac.png", tags: ["Interoperability"] },
     { logoUrl: "https://cdn.prod.website-files.com/660bffb9ffdd26c353bd02d3/6902581e7f68e8762cf3973f_JFL.png", tags: ["Cyber"] },
-    { logoUrl: "https://cdn.prod.website-files.com/660bffb9ffdd26c353bd02d3/6902581d0ba8faf6c97774cd_placeholder.png", tags: ["AI"] },
-    { logoUrl: "https://cdn.prod.website-files.com/660bffb9ffdd26c353bd02d3/6902581d0ba8faf6c97774cd_placeholder.png", tags: ["C-(s)UAS"] },
+    { logoUrl: "https://cdn.prod.website-files.com/660bffb9ffdd26c353bd02d3/691f73c5f63908107106c4a5_logos-partners-near-earth-screen-only.png", tags: ["AI"] },
     { logoUrl: "https://cdn.prod.website-files.com/660bffb9ffdd26c353bd02d3/6902581f5e1fb4680e8b03cd_dedrone.png", tags: ["C-(s)UAS"] }
   ];
   var filterPartnersByTag = (selectedTag) => {
@@ -48,7 +47,7 @@
         <div class="filter-dropdown">
           <label for="partner-type">Filter by Tag</label>
           <select id="partner-type">
-            <option value="">All Partners</option>
+            <option value="">All Applications</option>
             ${tagOptions} 
           </select>
         </div>

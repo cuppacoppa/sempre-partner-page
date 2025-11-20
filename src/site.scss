@@ -87,6 +87,16 @@
   width: 95%;
 }
 
+.cloud-partner-card-list {
+  display: flex;
+  flex-wrap: wrap; /* Ensures wrapping if there are too many cards */
+  justify-content: center; 
+  gap: 20px; 
+  max-width: 115rem; 
+  margin: 0 auto; 
+  width: 95%;
+}
+
 /* Main Partner Card Styles */
 .main-partner {
   border: 1px solid #ddd;

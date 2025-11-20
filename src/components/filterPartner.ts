@@ -19,7 +19,7 @@ export const partnerFilter = () => {
         <div class="filter-dropdown">
           <label for="partner-type">Filter by Tag</label>
           <select id="partner-type">
-            <option value="">All Partners</option>
+            <option value="">All Applications</option>
             ${tagOptions} 
           </select>
         </div>
