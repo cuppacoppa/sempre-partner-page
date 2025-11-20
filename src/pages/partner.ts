@@ -27,8 +27,8 @@ export const partnersApp: Partner[] = [
 export const partnersCloud: Partner[] = [
 { logoUrl: 'https://cdn.prod.website-files.com/660bffb9ffdd26c353bd02d3/67ab88d87da80c137d3dbd1c_Amazon_Web_Services_Logo.svg.png', tags: ['Cloud'] },
     { logoUrl: 'https://cdn.prod.website-files.com/660bffb9ffdd26c353bd02d3/67ab88d9d9b89e5bcf69b428_Oracle_Logo.svg.png', tags: ['Cloud'] },
-    { logoUrl: 'https://cdn.prod.website-files.com/660bffb9ffdd26c353bd02d3/6902581d0ba8faf6c97774cd_placeholder.png', tags: ['Cloud'] },
-    { logoUrl: 'https://cdn.prod.website-files.com/660bffb9ffdd26c353bd02d3/6902581d0ba8faf6c97774cd_placeholder.png', tags: ['Cloud'] },
+    { logoUrl: 'https://cdn.prod.website-files.com/660bffb9ffdd26c353bd02d3/691f7143789662d2c6216d4b_logos-partners-azure.png', tags: ['Cloud'] },
+    { logoUrl: 'https://cdn.prod.website-files.com/660bffb9ffdd26c353bd02d3/691f7142eb92cd08a979e5f2_logos-partners-google-cloud.png', tags: ['Cloud'] },
 ];
 
 
