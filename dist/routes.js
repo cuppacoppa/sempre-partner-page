@@ -476,8 +476,9 @@
               const mainPartnerSection = element;
               const partnersMain = [
                 { name: "Boeing", logoUrl: "https://cdn.prod.website-files.com/679e860587d809fd4d2d7b55/67aa3479c6a80a7987c26917_Boeing_full_logo.svg.png", subheading: "Simplifying connectivity in secure operations.", link: "https://www.sempre.ai/resources/smart-factory" },
-                { name: "T-Mobile", logoUrl: "https://cdn.prod.website-files.com/660bffb9ffdd26c353bd02d3/672e663a927272a6b6d5fe31_T-Mobile_New_Logo_Primary_RGB_M-on-W.jpg", subheading: "Securely extending the nation\u2019s largest 5G network.", link: "https://www.sempre.ai/partner" },
-                { name: "Northrop", logoUrl: "https://cdn.prod.website-files.com/660bffb9ffdd26c353bd02d3/67ab88d9ed107ef4cfc5ee00_Northrop_Grumman_logo_blue-on-clear_2020.svg.png", subheading: "Supporting the most demanding missions with trusted resilience.", link: "https://www.sempre.ai/partner" }
+                { name: "T-Mobile", logoUrl: "https://cdn.prod.website-files.com/660bffb9ffdd26c353bd02d3/672e663a927272a6b6d5fe31_T-Mobile_New_Logo_Primary_RGB_M-on-W.jpg", subheading: "Securely extending the nation\u2019s largest 5G network.", link: "https://sempre.ai/news/sempre-announces-strategic-collaboration-with-t-mobile" },
+                { name: "Northrop", logoUrl: "https://cdn.prod.website-files.com/660bffb9ffdd26c353bd02d3/67ab88d9ed107ef4cfc5ee00_Northrop_Grumman_logo_blue-on-clear_2020.svg.png", subheading: "Supporting the most demanding missions with trusted resilience.", link: "https://sempre.ai/news/northrop-grumman-at-t-and-sempre-demonstrate-next-generation-flightline-maintenance-operations-2" },
+                { name: "LTRI", logoUrl: "https://cdn.prod.website-files.com/660bffb9ffdd26c353bd02d3/69c451ca1ccb4752169cc915_LTRI-logo.png", subheading: "Advancing real-world C-UAS testing and integration.", link: "https://sempre.ai/news/ltri-and-sempre-accelerate-counter-unmanned-aircraft-systems-c-uas-innovation" }
               ];
               mainPartnerSection.classList.add("partner-card-list");
               partnersMain.forEach((partner) => {
