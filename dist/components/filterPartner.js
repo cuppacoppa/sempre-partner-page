@@ -20,7 +20,11 @@
     { logoUrl: "https://cdn.prod.website-files.com/660bffb9ffdd26c353bd02d3/6902581fae03ef4d3d23824e_rallytac.png", tags: ["Interoperability"] },
     { logoUrl: "https://cdn.prod.website-files.com/660bffb9ffdd26c353bd02d3/6902581e7f68e8762cf3973f_JFL.png", tags: ["Cyber"] },
     { logoUrl: "https://cdn.prod.website-files.com/660bffb9ffdd26c353bd02d3/691f73c5f63908107106c4a5_logos-partners-near-earth-screen-only.png", tags: ["AI"] },
-    { logoUrl: "https://cdn.prod.website-files.com/660bffb9ffdd26c353bd02d3/6902581f5e1fb4680e8b03cd_dedrone.png", tags: ["C-(s)UAS"] }
+    { logoUrl: "https://cdn.prod.website-files.com/660bffb9ffdd26c353bd02d3/6902581f5e1fb4680e8b03cd_dedrone.png", tags: ["C-(s)UAS"] },
+    { logoUrl: "https://cdn.prod.website-files.com/660bffb9ffdd26c353bd02d3/69c691328f16ed36fa09c9c1_Robin%20Radar%20Systems%20-%20Black-2.png", tags: ["C-(s)UAS"] },
+    { logoUrl: "https://cdn.prod.website-files.com/660bffb9ffdd26c353bd02d3/69c69131651c53493592f0fc_Teledyne_logos%20(1).jpeg", tags: ["C-(s)UAS"] },
+    { logoUrl: "https://cdn.prod.website-files.com/660bffb9ffdd26c353bd02d3/69c69131e8e017cf41707fcb_Axis_Communications_idAWyb57WO_1.png", tags: ["C-(s)UAS"] },
+    { logoUrl: "https://cdn.prod.website-files.com/660bffb9ffdd26c353bd02d3/69c6913004ccec20f35ff4fe_Aerovironment.jpeg", tags: ["C-(s)UAS"] }
   ];
   var filterPartnersByTag = (selectedTag) => {
     const appPartnerSection = document.querySelector(".application-partner-card-list");
